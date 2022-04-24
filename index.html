@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <link rel="stylesheet" href="style.css">
+            <script src="interset.js"></script>
+    </head>
+    <body>
+        <div>
+        <h1>simple interest calculator</h1><br>
+        <table>
+            <tr>
+                <td class="lable">Amount</td>
+                <td >
+                    <input type="text"  id="principal">
+                </td>
+            </tr>
+            <tr>
+                <td class="lable">interest</td>
+                <td >
+                   <input type="range" name="rate"  id="rate" min="0" max="100" onchange="SliderValue()">
+                <span id="rate_display">50%</span></td>
+            </tr>
+            <tr>
+                <td class="lable">No of years</td>
+                <td>
+                   <select name="" id="years">
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                   </select>
+                </td>
+            </tr>
+        </table>
+   <button  onclick="button()" id="button">Calculate interest</button>
+    <span id="result"></span>
+     </div>
+
+</body>
+</html>
